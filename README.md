@@ -1,13 +1,13 @@
 # raspberry-minimal-kernel
 Raspberry PI 2 Minimal Kernel
 
-This repository contains config and binaries for minimal kernel configuration (mostly) for Raspberry PI 2. This kernel is "moduleless" this means that it is not possible to load modules at runtime.
+This repository contains config and binaries for minimal kernel configuration (*mostly*) for Raspberry PI 2. This kernel is "*moduleless*" this means that it is not possible to load modules at runtime.
 Repository contains:
 
-./bins - pre-build binaries if kernel, ready to install in 2 minutes
-./configs - configuration for kernels, so anyone can compile own bins
+ - ./bins - pre-build binaries of kernel, ready to install in 2 minutes
+ - ./configs - configuration for kernels, so anyone can compile own bins
 
-kernel7.img is _always_ signed by my GPG key (kernel7.img.sig) PublicKey: https://onefellow.com/zbyszek-gpg.asc
+kernel7.img is *always signed* (*kernel7.img.sig*) by my [GPG PublicKey](https://onefellow.com/zbyszek-gpg.asc)
 
 How this kernel is differen from oryginal?
  - secure: no modules, includes fstack-protector-strong, removed lot of unessesery modules, soon i hope it will include grsec, and more
